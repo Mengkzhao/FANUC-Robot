@@ -1,1 +1,10 @@
-
+PRGORAM HELLO_WORLD
+BEGIN
+     --这是注释，注释使用"--"开始，该行不会被编译
+     --强制打开用户界面
+     FORCE_SPMENU(TP_PANEL,SPI_TPUSER,1)
+     --对用户界面的TPDISPLAY文件进行清屏，光标回@1,1
+     WRITE TPDISPLAY(CHR(128),CHR(137))
+     --向TPDISPLAY文件打印'Hello World'字符串
+     WRITE TPDISPLAY('Hello World',CR)
+END HELLO_WORLD
